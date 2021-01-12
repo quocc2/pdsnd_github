@@ -177,8 +177,8 @@ def user_stats(df, city):
         raw_detail = input('\n Would you like to see some raw detail data? Enter yes or no.\n')
         if raw_detail.lower() == 'yes': #accept user input for yes and no answer when prompting if
         # want to view raw data before computation.
-            print(df[data:data+5])
-            data = data+5
+            print(df[data:data+7])
+            data = data+7 #change data output from 5 rows to 7 rows.
         else:
             break
 
