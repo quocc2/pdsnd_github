@@ -151,11 +151,11 @@ def user_stats(df, city):
     start_time = time.time()
 
     # Display counts of user types
-    user_types = df.groupby(['User Type'])['User Type'].count()
+    user_types = df.groupby(['User Type'])['User Type'].count()# Use count by group.
     print(user_types, "\n")
     if city != 'washington':
         # Display counts of gender
-        gender = df.groupby(['Gender'])['Gender'].count()
+        gender = df.groupby(['Gender'])['Gender'].count()# count base on gender.
         print(gender)
 
         # Display earliest, most recent, and most common year of birth
