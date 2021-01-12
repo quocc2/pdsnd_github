@@ -16,16 +16,16 @@ def get_filters():
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
     print('Hello! Let\'s explore some US bikeshare data!')
-    
+
     # Prompt and get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     while True:
         city = input("\nWhich city would you like to review data?\n")
         city = city.lower() #Accept lower case input.
-        if city in ['chicago', 'new york city', 'washington']:
+        if city in ['chicago', 'new york city', 'washington']:#IF input name match city break loop.
             break
-        else:
+        else:# If input city is not match options above prompt user to re-enter city name.
             print("\nInvalid. Try again. Please enter a name of city from three choices above\n")
-            
+
     # Prompt and get user input for month in the first 6 months (all, january, february, ... , june)
     while True:
         month = input("\nDo you want details data of a specific month? If yes, type the month name of the first 6 months, or type 'all' for all 6 months\n")
@@ -34,7 +34,7 @@ def get_filters():
             break
         else:
             print("\nInvalid. Try again. Please enter a name in the first 6 months or all for all 6 months.\n")
-            
+
     # Prompt and get user input for day in a week (all, monday, tuesday, ... sunday)
     while True:
         day = input("\nDo you want details data of a specific day? If yes, type a day name or type 'all' for all the whole week\n")
@@ -43,7 +43,7 @@ def get_filters():
             break
         else:
             print("Invalid. Try again. Please enter a name of the day in a week or all the whole week")
-            
+
     print('-'*40)
     return city, month, day
 
@@ -157,25 +157,25 @@ def user_stats(df, city):
         # Display counts of gender
         gender = df.groupby(['Gender'])['Gender'].count()
         print(gender)
-        
+
         # Display earliest, most recent, and most common year of birth
         most_recent_year_of_birth = sorted(df.groupby(['Birth Year'])['Birth Year'], reverse=True)[0][0]
         print("The most recent year of birth is ", most_recent_year_of_birth, "\n")
-        
+
         earliest_year_of_birth = sorted(df.groupby(['Birth Year'])['Birth Year'])[0][0]
         print("The earliest year of birth is ", earliest_year_of_birth, "\n")
-        
+
         most_common_year_of_birth = df['Birth Year'].mode()[0]
         print("The most common year of birth is ", most_common_year_of_birth, "\n")
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
-    
+
     # Give user an option to view raw detail data.
     data = 1
     while True:
         raw_detail = input('\n Would you like to see some raw detail data? Enter yes or no.\n')
-        if raw_detail.lower() == 'yes': 
+        if raw_detail.lower() == 'yes':
             print(df[data:data+5])
             data = data+5
         else:
