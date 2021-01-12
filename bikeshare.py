@@ -174,7 +174,7 @@ def user_stats(df, city):
     # Give user an option to view raw detail data.
     data = 1
     while True:
-        raw_detail = input('\n Would you like to see some raw detail data? Enter yes or no.\n')
+        raw_detail = input('\n Would you like to see some original data? Enter yes or no.\n')
         if raw_detail.lower() == 'yes':
             print(df[data:data+5])
             data = data+5
