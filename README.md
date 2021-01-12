@@ -1,5 +1,7 @@
 ### Date created
 * January 10 2021
+# Student Name
+* Cuong Tran
 
 ### Project Title
 * Version control US Bikeshare Python Project which is using numpy and pandas to calculate statistical data.
@@ -37,3 +39,4 @@ New York City, Chicago, and Washington. Python numpy and pandas are used to esta
 [towarddatascience](https://towardsdatascience.com/23-great-pandas-codes-for-data-scientists-cca5ed9d8a38)
 [Git Documentation](https://git-scm.com/docs)
 [Git Documentation](https://git-scm.com/docs/git)
+[Udacity Commit Message Style Guide](https://udacity.github.io/git-styleguide/)
