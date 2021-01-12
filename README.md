@@ -33,7 +33,18 @@ New York City, Chicago, and Washington. Python numpy and pandas are used to esta
 * bikeshare.py
 
 ### Credits
+<<<<<<< HEAD
 [Github](https://guides.github.com/features/mastering-markdown/)
 [towarddatascience](https://towardsdatascience.com/23-great-pandas-codes-for-data-scientists-cca5ed9d8a38)
 [Git Documentation](https://git-scm.com/docs)
 [Git Documentation](https://git-scm.com/docs/git)
+||||||| 875ed8b
+It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+
+=======
+[Github](https://guides.github.com/features/mastering-markdown/)
+[towarddatascience](https://towardsdatascience.com/23-great-pandas-codes-for-data-scientists-cca5ed9d8a38)
+[Git Documentation](https://git-scm.com/docs)
+[Git Documentation](https://git-scm.com/docs/git)
+[Udacity Commit Message Style Guide](https://udacity.github.io/git-styleguide/)
+>>>>>>> master
